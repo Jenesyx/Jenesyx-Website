@@ -1,0 +1,319 @@
+/* Import Css Reset */
+
+@import "../CSS/reset.css";
+@font-face {
+    font-family: Roboto;
+    src: url(../Fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(../Fonts/Roboto-Bold.ttf);
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* General */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, input, button {
+    font-family: Roboto;
+}
+
+body {
+    direction: ltr;
+    background: #1c1f3f;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+    /* background: blue; */
+}
+
+.clear {
+    clear: both;
+}
+
+/* Header */
+
+#header {
+    width: 100%;
+    height: 100px;
+    background: #353a78;
+    position: relative;
+    -webkit-box-shadow: 0px 3px 12px 0px #000000;
+    box-shadow: 0px 3px 12px 0px #000000;
+}
+
+#header .logo {
+    float: left;
+    padding-top: 18px;
+}
+
+#header .logo img {
+    width: 100px;
+}
+
+/* Navigation */
+
+#nav {
+    width: 100%;
+    padding-top: 20px;
+}
+
+#nav svg {
+    margin-right: 8px;
+    vertical-align: -1px;
+    font-size: 20px;
+}
+
+#nav ul li {
+    float: right;
+    display: inline-block;
+}
+
+#nav a {
+    font-family: Roboto;
+    font-size: 21px;
+    color: #777;
+    position: relative;
+    bottom: 23px;
+    display: inline-block;
+    text-decoration: none;
+    transition: ease .3s all;
+    line-height: 2em;
+    padding: 1.5em;
+    -webkit-transition: ease .3s all;
+    -moz-transition: ease .3s all;
+    -ms-transition: ease .3s all;
+    -o-transition: ease .3s all;
+}
+
+#nav a:hover {
+    color: #fff;
+}
+
+#nav li>a:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+nav ul li>a:after {
+    content: '';
+    position: absolute;
+    bottom: 1.5em;
+    left: 15%;
+    width: 70%;
+    height: 3px;
+    transform: scaleX(0);
+    background-color: #fff;
+    transition: all .3s ease;
+    opacity: 0.9;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+li#nav>a:after, li>a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Social Media */
+
+#social-media {
+    width: 100%;
+    height: 707px;
+    /* background: red; */
+}
+
+#social-media .mainholder {
+    position: relative;
+    right: 200px;
+    width: 1500px;
+    height: 707px;
+    margin: auto;
+    padding: 0;
+    /* background: #777; */
+}
+
+#social-media .circleone {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 80px;
+    left: 135px;
+    background: #3b4382;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+#social-media .circletwo {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    bottom: 60px;
+    right: 140px;
+    background: #ffff01;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+#social-media .mediasholder {
+    position: relative;
+    top: 160px;
+    left: 220px;
+    width: 70%;
+    height: 400px;
+    background: rgba( 255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10px);
+    -webkit-backdrop-filter: blur( 10px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+#social-media .mediasholder ul {
+    margin: 6% 8%;
+}
+
+#social-media .mediasholder ul li {
+    margin-top: 4%;
+}
+
+#social-media .mediasholder a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    padding: 9px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+#social-media .mediasholder a:hover {
+    text-decoration: none;
+    font-size: 35px;
+    color: #ffff01;
+}
+
+#social-media .mediasholder a:hover svg {
+    font-size: 35px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    animation: icons 3s infinite;
+    -webkit-animation: icons 3s infinite;
+}
+
+@keyframes icons {
+    0% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+    25% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+    }
+    50% {
+        transform: rotate(25deg);
+        -webkit-transform: rotate(25deg);
+        -moz-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+        -o-transform: rotate(25deg);
+    }
+    75% {
+        transform: rotate(-25deg);
+        -webkit-transform: rotate(-25deg);
+        -moz-transform: rotate(-25deg);
+        -ms-transform: rotate(-25deg);
+        -o-transform: rotate(-25deg);
+    }
+    100% {
+        transform: rotate(25deg);
+        -webkit-transform: rotate(25deg);
+        -moz-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+        -o-transform: rotate(25deg);
+    }
+}
+
+#social-media .mediasholder svg {
+    margin-right: 20px;
+    font-size: 26px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+/* Footer */
+
+#footer {
+    position: relative;
+    margin-top: 50px;
+    background: #3C495E;
+    height: 80px;
+    text-align: center;
+    color: #fff;
+    padding: 1px;
+}
+
+#footer .footer-info {
+    margin-top: 9px;
+}
+
+#footer .footer-info p {
+    line-height: 32px;
+    font-size: 17px;
+}
+
+#footer .fa-heart {
+    color: #D52A2A;
+}
+
+#footer .fa-coffee {
+    color: #f9ab25;
+}
