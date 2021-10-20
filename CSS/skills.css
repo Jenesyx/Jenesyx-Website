@@ -1,0 +1,376 @@
+/* Import Css Reset */
+@import "../CSS/reset.css";
+
+@font-face {
+    font-family: Roboto;
+    src: url(../Fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(../Fonts/Roboto-Bold.ttf);
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* General */
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #1c1f3f;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* background-color: #F5F5F5; */
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #5d62b4;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, input, button {
+    font-family: Roboto;
+}
+
+body {
+    direction: ltr;
+    background: #1c1f3f;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+    /* background: blue; */
+}
+
+.clear {
+    clear: both;
+}
+
+/* Header */
+
+#header {
+    width: 100%;
+    height: 100px;
+    background: #353a78;
+    position: relative;
+    -webkit-box-shadow: 0px 3px 12px 0px #000000;
+    box-shadow: 0px 3px 12px 0px #000000;
+}
+
+#header .logo {
+    float: left;
+    padding-top: 18px;
+}
+
+#header .logo img {
+    width: 100px;
+}
+
+/* Navigation */
+
+#nav {
+    width: 100%;
+    padding-top: 20px;
+}
+
+#nav svg {
+    margin-right: 8px;
+    vertical-align: -1px;
+    font-size: 20px;
+}
+
+#nav ul li {
+    float: right;
+    display: inline-block;
+}
+
+#nav a {
+    font-family: Roboto;
+    font-size: 21px;
+    color: #777;
+    position: relative;
+    bottom: 23px;
+    display: inline-block;
+    text-decoration: none;
+    transition: ease .3s all;
+    line-height: 2em;
+    padding: 1.5em;
+    -webkit-transition: ease .3s all;
+    -moz-transition: ease .3s all;
+    -ms-transition: ease .3s all;
+    -o-transition: ease .3s all;
+}
+
+#nav a:hover {
+    color: #fff;
+}
+
+#nav li>a:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+nav ul li>a:after {
+    content: '';
+    position: absolute;
+    bottom: 1.5em;
+    left: 15%;
+    width: 70%;
+    height: 3px;
+    transform: scaleX(0);
+    background-color: #fff;
+    transition: all .3s ease;
+    opacity: 0.9;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+li#nav>a:after, li>a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Skills */
+
+#skills {
+    /* background: red; */
+    width: 100%;
+    height: 736px;
+}
+
+/* Left */
+
+#skills .left {
+    float: left;
+    /* background: yellow; */
+    width: 400px;
+    height: 720px;
+    margin: auto;
+    padding: 0%;
+    position: relative;
+}
+
+#skills .left .form {
+    margin: 70px 0 0 90px;
+}
+
+#skills .left .triangle1 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 85px solid #ffff01;
+    position: absolute;
+    margin-top: 107px;
+    margin-left: 60px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    opacity: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+#skills .left .triangle2 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 85px solid #ffff01;
+    position: absolute;
+    margin-top: 235px;
+    margin-left: 60px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    opacity: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+#skills .left .triangle3 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 85px solid #ffff01;
+    position: absolute;
+    margin-top: 365px;
+    margin-left: 60px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    opacity: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+#skills .left .triangle4 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 85px solid #ffff01;
+    position: absolute;
+    margin-top: 490px;
+    margin-left: 60px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    opacity: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+#skills .left .form input {
+    color: #fff;
+    font-size: 23px;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: left;
+    margin-top: 70px;
+    padding: 15px 55px;
+    background: linear-gradient(to right, rgb(255, 255, 255) -70%, rgba(255, 255, 255, 0) 90%);
+    box-shadow: 0 8px 32px 0 rgba(21, 27, 104, 0.13);
+    backdrop-filter: blur( 9.5px);
+    -webkit-backdrop-filter: blur( 9.5px);
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+#skills .left .form input:hover {
+    background: rgba( 255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(5, 6, 31, 0.13);
+    backdrop-filter: blur( 9.5px);
+    -webkit-backdrop-filter: blur( 9.5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 1);
+}
+
+/* Right */
+
+#skills .main-holder {
+    position: relative;
+    width: 700px;
+    height: 740px;
+    padding: 0;
+    margin: auto;
+}
+
+#skills .main-holder .buttons {
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 50px;
+}
+
+#skills .main-holder .buttons button {
+    width: 50px;
+    height: 30px;
+}
+
+#skills .main-holder .text-holder {
+    width: 600px;
+    height: 500px;
+    background: white;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: rgba( 255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(6, 8, 34, 0.37);
+    backdrop-filter: blur( 5.5px);
+    -webkit-backdrop-filter: blur( 5.5px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+#skills .main-holder .text-holder p {
+    color: #fff;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+/* Footer */
+
+#footer {
+    position: relative;
+    margin-top: 20px;
+    background: #3C495E;
+    height: 80px;
+    text-align: center;
+    color: #fff;
+    padding: 1px;
+}
+
+#footer .footer-info {
+    margin-top: 9px;
+}
+
+#footer .footer-info p {
+    line-height: 32px;
+    font-size: 17px;
+}
+
+#footer .fa-heart {
+    color: #D52A2A;
+}
+
+#footer .fa-coffee {
+    color: #f9ab25;
+}
