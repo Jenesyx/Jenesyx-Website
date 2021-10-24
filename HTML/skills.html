@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../CSS/skills.css">
         <link rel="icon" href="../Images/face png .png">
-        <script src="../JS/Main.js"></script>
+        <script src="../JS/skills.js"></script>
         <script defer
             src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
             integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
@@ -14,7 +14,7 @@
         </script>
         <title>Skills</title>
     </head>
-    <body onload="onload()">
+    <body>
         <!-- Start Header -->
         <header id="header">
             <div class="container">
@@ -55,29 +55,81 @@
                 <div class="triangle2" id="triangle2"></div>
                 <div class="triangle3" id="triangle3"></div>
                 <div class="triangle4" id="triangle4"></div>
-                <form action="" class="form">
-                    <input type="submit" value="E-Sport" class="esport"
-                        onmouseover="mooz('in')" onmouseout="mooz('out')">
-                    <br>
-                    <input type="submit" value="YT/Twitch" class="yttwitch"
-                        onmouseover="sib('in')" onmouseout="sib('out')">
-                    <br>
-                    <input type="submit" value="Developing" class="developing"
-                        onmouseover="golabi('in')" onmouseout="golabi('out')">
-                    <br>
-                    <input type="submit" value="Graphic Design"
-                        class="graphicdesign" onmouseover="havij('in')"
-                        onmouseout="havij('out')">
-                </form>
+                <div class="skills-text">
+                    <ul>
+                        <li>
+                            <a class="esport"
+                                onmouseover="mooz('in')"
+                                onmouseout="mooz('out')"
+                                onclick="sosis('esport')">E-Sport
+                            </a>
+                        </li>
+                        <li>
+                            <a class="yttwitch"
+                                onmouseover="sib('in')" 
+                                onmouseout="sib('out')"
+                                onclick="sosis('yttwitch')">
+                                YT/Twitch
+                            </a>
+                        </li>
+                        <li>
+                            <a class="developing"
+                                onmouseover="golabi('in')"
+                                onmouseout="golabi('out')"
+                                onclick="sosis('developing')">
+                                Developing
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="graphicdesign" 
+                                onmouseover="havij('in')"
+                                onmouseout="havij('out')"
+                                onclick="sosis('graphicdesign')">
+                                Graphic Design
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="right">
                 <div class="container">
                     <div class="main-holder">
-                        <div class="buttons">
+                        <!-- <div class="buttons">
                             <button class="english">Eng</button>
                             <button class="persian">Fa</button>
+                        </div> -->
+                        <div class="esport-text" id="esport-text">
+                            <p>
+                                slm,slm,slm,slm,slm,slm,slm,slm,,slm,slm,,slm,slm,,slm,slm,,slm
+                                <br>
+                                ,slm,slm,,slm,slm,,slm,slm,,slm,slm,,slm,slm,,slm,slm,,slm,slm,,<br>
+                                slm,slm,,slm,slm,,slm,slm,,slm,slm,,slm,slm,,slm,slm,,slm,slm,,s
+                                <br>
+                                lm,slm,,slm,slm,,slm,slm,,slm,slm,,slm,slm,,slm,slm,
+                            </p>
                         </div>
-                        <div class="text-holder">
+                        <div class="yt-text" id="yt-text">
+                            <p>
+                                btttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+                                <br>
+                                btttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt,<br>
+                                btttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttts
+                                <br>
+                                bttttttttttttttttttttttttttttttttttttttttttttttttt
+                            </p>
+                        </div>
+                        <div class="develope-text" id="develope-text">
+                            <p>
+                                dggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+                                <br>
+                                dggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,<br>
+                                dggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+                                <br>
+                                dggggggggggggggggggggggggggggggggggggggggggggggg
+                            </p>
+                        </div>
+                        <div class="design-text" id="design-text">
                             <p>
                                 slm,slm,slm,slm,slm,slm,slm,slm,,slm,slm,,slm,slm,,slm,slm,,slm
                                 <br>

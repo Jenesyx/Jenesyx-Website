@@ -177,8 +177,8 @@ li#nav>a:after, li>a:hover::after {
     position: relative;
 }
 
-#skills .left .form {
-    margin: 70px 0 0 90px;
+#skills .left .skills-text {
+    margin: 160px 0 0 90px;
 }
 
 #skills .left .triangle1 {
@@ -254,7 +254,7 @@ li#nav>a:after, li>a:hover::after {
     border-right: 50px solid transparent;
     border-bottom: 85px solid #ffff01;
     position: absolute;
-    margin-top: 490px;
+    margin-top: 495px;
     margin-left: 60px;
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
@@ -269,12 +269,15 @@ li#nav>a:after, li>a:hover::after {
     -o-transition: all 0.4s ease;
 }
 
-#skills .left .form input {
+#skills .left .skills-text ul li {
+    margin-top: 105px;
+}
+
+#skills .left .skills-text a {
     color: #fff;
     font-size: 23px;
     text-shadow: 2px 2px 4px #000000;
     text-align: left;
-    margin-top: 70px;
     padding: 15px 55px;
     background: linear-gradient(to right, rgb(255, 255, 255) -70%, rgba(255, 255, 255, 0) 90%);
     box-shadow: 0 8px 32px 0 rgba(21, 27, 104, 0.13);
@@ -282,6 +285,7 @@ li#nav>a:after, li>a:hover::after {
     -webkit-backdrop-filter: blur(11.5px);
     border-radius: 10px;
     border: 1px solid rgba(28, 31, 63, 1);
+    border-right: 1px transparent;
     transition: all 0.9s ease;
     -webkit-transition: all 0.9s ease;
     -moz-transition: all 0.9s ease;
@@ -289,13 +293,15 @@ li#nav>a:after, li>a:hover::after {
     -o-transition: all 0.9s ease;
 }
 
-#skills .left .form input:hover {
+#skills .left .skills-text a:hover {
     background: rgba( 255, 255, 255, 0.3);
     box-shadow: 0 8px 32px 0 rgba(5, 6, 31, 0.13);
     backdrop-filter: blur(11.5px);
     -webkit-backdrop-filter: blur(11.5px);
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 1);
+    border-right: 1px solid;
+    cursor: pointer;
 }
 
 /* Right */
@@ -339,7 +345,9 @@ li#nav>a:after, li>a:hover::after {
     border-left: none;
 }
 
-#skills .main-holder .text-holder {
+/* E-Sport Text */
+#skills .main-holder .esport-text {
+    display: none;
     width: 600px;
     height: 500px;
     background: white;
@@ -358,7 +366,94 @@ li#nav>a:after, li>a:hover::after {
     border: 1px solid rgba( 255, 255, 255, 0.18);
 }
 
-#skills .main-holder .text-holder p {
+#skills .main-holder .esport-text p {
+    color: #fff;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+/* Youtube-Twitch Text */
+#skills .main-holder .yt-text {
+    display: none;
+    width: 600px;
+    height: 500px;
+    background: white;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    border-radius: 0 10px 10px 10px;
+    -webkit-border-radius: 0 10px 10px 10px;
+    -moz-border-radius: 0 10px 10px 10px;
+    -ms-border-radius: 0 10px 10px 10px;
+    -o-border-radius: 0 10px 10px 10px;
+    background: rgba( 255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(6, 8, 34, 0.37);
+    backdrop-filter: blur( 5.5px);
+    -webkit-backdrop-filter: blur( 5.5px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+#skills .main-holder .yt-text p {
+    color: #fff;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+/* Developing Text */
+#skills .main-holder .develope-text {
+    display: none;
+    width: 600px;
+    height: 500px;
+    background: white;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    border-radius: 0 10px 10px 10px;
+    -webkit-border-radius: 0 10px 10px 10px;
+    -moz-border-radius: 0 10px 10px 10px;
+    -ms-border-radius: 0 10px 10px 10px;
+    -o-border-radius: 0 10px 10px 10px;
+    background: rgba( 255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(6, 8, 34, 0.37);
+    backdrop-filter: blur( 5.5px);
+    -webkit-backdrop-filter: blur( 5.5px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+#skills .main-holder .develope-text p {
+    color: #fff;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+/* Graphic Design Text */
+#skills .main-holder .design-text {
+    display: none;
+    width: 600px;
+    height: 500px;
+    background: white;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    border-radius: 0 10px 10px 10px;
+    -webkit-border-radius: 0 10px 10px 10px;
+    -moz-border-radius: 0 10px 10px 10px;
+    -ms-border-radius: 0 10px 10px 10px;
+    -o-border-radius: 0 10px 10px 10px;
+    background: rgba( 255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(6, 8, 34, 0.37);
+    backdrop-filter: blur( 5.5px);
+    -webkit-backdrop-filter: blur( 5.5px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+#skills .main-holder .design-text p {
     color: #fff;
     margin-top: 40px;
     margin-left: 40px;
