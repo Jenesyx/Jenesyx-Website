@@ -181,18 +181,18 @@ li#nav>a:after, li>a:hover::after {
     position: absolute;
     top: 80px;
     left: 135px;
-    /* background: #3b4382; */
-    background: #ffff01;
+    /*background: #3b4382;
+    */background: #ffff01;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    transition: all 0.4s ease;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
+    transition: all 1.6s ease;
+    -webkit-transition: all 1.6s ease;
+    -moz-transition: all 1.6s ease;
+    -ms-transition: all 1.6s ease;
+    -o-transition: all 1.6s ease;
 }
 
 #social-media .circletwo {
@@ -201,18 +201,18 @@ li#nav>a:after, li>a:hover::after {
     position: absolute;
     bottom: 60px;
     right: 140px;
-    /* background: #ffff01; */
-    background: #3b4382;
+    /*background: #ffff01;
+    */background: #3b4382;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    transition: all 0.4s ease;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
+    transition: all 1.6s ease;
+    -webkit-transition: all 1.6s ease;
+    -moz-transition: all 1.6s ease;
+    -ms-transition: all 1.6s ease;
+    -o-transition: all 1.6s ease;
 }
 
 #social-media .mediasholder {

@@ -196,11 +196,11 @@ li#nav>a:after, li>a:hover::after {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     opacity: 0;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
 }
 
 #skills .left .triangle2 {
@@ -218,11 +218,11 @@ li#nav>a:after, li>a:hover::after {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     opacity: 0;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
 }
 
 #skills .left .triangle3 {
@@ -240,11 +240,11 @@ li#nav>a:after, li>a:hover::after {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     opacity: 0;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
 }
 
 #skills .left .triangle4 {
@@ -262,11 +262,11 @@ li#nav>a:after, li>a:hover::after {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     opacity: 0;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
 }
 
 #skills .left .form input {
@@ -278,22 +278,22 @@ li#nav>a:after, li>a:hover::after {
     padding: 15px 55px;
     background: linear-gradient(to right, rgb(255, 255, 255) -70%, rgba(255, 255, 255, 0) 90%);
     box-shadow: 0 8px 32px 0 rgba(21, 27, 104, 0.13);
-    backdrop-filter: blur( 9.5px);
-    -webkit-backdrop-filter: blur( 9.5px);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
     border-radius: 10px;
-    border: none;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    border: 1px solid rgba(28, 31, 63, 1);
+    transition: all 0.9s ease;
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
 }
 
 #skills .left .form input:hover {
     background: rgba( 255, 255, 255, 0.3);
     box-shadow: 0 8px 32px 0 rgba(5, 6, 31, 0.13);
-    backdrop-filter: blur( 9.5px);
-    -webkit-backdrop-filter: blur( 9.5px);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 1);
 }
@@ -317,6 +317,26 @@ li#nav>a:after, li>a:hover::after {
 #skills .main-holder .buttons button {
     width: 50px;
     height: 30px;
+    margin-right: -4px;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+#skills .main-holder .buttons .english {
+    background: #3b4382;
+    border: 1px solid #fff;
+    border-right: none;
+    border-radius: 10px 0 0 0 ;
+    -webkit-border-radius: 10px 0 0 0 ;
+    -moz-border-radius: 10px 0 0 0 ;
+    -ms-border-radius: 10px 0 0 0 ;
+    -o-border-radius: 10px 0 0 0 ;
+}
+
+#skills .main-holder .buttons .persian {
+    background: #2b3054;
+    border: 1px solid #fff; 
+    border-left: none;
 }
 
 #skills .main-holder .text-holder {
@@ -326,11 +346,11 @@ li#nav>a:after, li>a:hover::after {
     position: absolute;
     top: 120px;
     left: 50px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: 0 10px 10px 10px;
+    -webkit-border-radius: 0 10px 10px 10px;
+    -moz-border-radius: 0 10px 10px 10px;
+    -ms-border-radius: 0 10px 10px 10px;
+    -o-border-radius: 0 10px 10px 10px;
     background: rgba( 255, 255, 255, 0.2);
     box-shadow: 0 8px 32px 0 rgba(6, 8, 34, 0.37);
     backdrop-filter: blur( 5.5px);
